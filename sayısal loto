@@ -1,0 +1,16 @@
+import random
+loto=[]
+j=0
+while j<8:
+    i=0
+    kolon=[]
+    while i<6:
+        a=random.randrange(1,50)
+        if kolon.count(a)==0:
+           kolon.append(a)
+           i=i+1
+           kolon.sort()
+           if loto.count(kolon)==0:
+              loto.append(kolon)
+              j=j+1
+print loto
