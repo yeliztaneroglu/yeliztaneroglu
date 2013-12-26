@@ -1,0 +1,16 @@
+import random
+sanslikapi=random.randint(1,101)
+tercih=input("bir kapı seç: ")
+if sanslikapi==tercih:
+    sanslikapi=random.randint(1,101)
+    print "son iki kapı",sanslikapi, "ve" ,tercih
+    yenitercih=input("tercihin hangi kapı: ")
+    if yenitercih==tercih:
+        print "kazandın"
+else:
+    print "son iki kapı", sanslikapi, "ve" ,tercih
+    yenitercih=input("tercihin hangi kapı: ")
+    if yenitercih==sanslikapi:
+        print "kazandın"
+    else:
+        print "kaybettin"
